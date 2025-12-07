@@ -4,13 +4,12 @@ from tkinter import *
 root = Tk()
 
 # these are label widgets
-myLabel1 = Label(root, text="Hello bruh!").grid(row=0, column=0)
-myLabel2 = Label(root, text="I'm learing tkinter.").grid(row=1, column=5)
-myLabel3 = Label(root, text="        ").grid(row=1, column=1)
+myLabel1 = Label(root, text="Hellowww bruh!")
+myLabel2 = Label(root, text="I'm learing tkinter.")
+myButton = Button(root, text="Click Here (because I said so)")
 
-# myLabel1
-# myLabel2
-# myLabel3
-# so the rows and coluns are relative
+myLabel1.pack()
+myLabel2.pack()
+myButton.pack()
 
 root.mainloop()
