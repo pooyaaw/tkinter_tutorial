@@ -13,7 +13,8 @@ e.get()  # gets whatever you entered into the widget
 
 
 def myClick():
-    myLabel = Label(root, text="hello " + e.get())
+    name = e.get()
+    myLabel = Label(root, text="hello " + name)
     myLabel.pack()
 
 
