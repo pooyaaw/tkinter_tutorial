@@ -3,13 +3,18 @@ from tkinter import *
 # this creates the window
 root = Tk()
 
-# these are label widgets
-myLabel1 = Label(root, text="Hellowww bruh!")
-myLabel2 = Label(root, text="I'm learing tkinter.")
-myButton = Button(root, text="Click Here (because I said so)")
 
-myLabel1.pack()
-myLabel2.pack()
+def myClick():
+    myLabel = Label(root, text="Look! I clicked a button!")
+    myLabel.pack()
+
+
+myButton = Button(root,  command=myClick, text="Click Here",
+                  padx=30, pady=30, fg="green", bg="black")
+# you cant write  command=myClick() because the () will have the myClick executed anyway.
+# and when you click it again it wont be executed every time you click it.
+
+
 myButton.pack()
 
 root.mainloop()
